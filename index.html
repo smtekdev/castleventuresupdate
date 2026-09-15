@@ -1,0 +1,1483 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<!-- For IE -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- For Resposive Device -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Castle Ventures</title>
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="57x57" href="images/fav-icon/Cicon.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="images/fav-icon/Cicon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/fav-icon/Cicon.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/fav-icon/Cicon.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/fav-icon/Cicon.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/fav-icon/Cicon.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="images/fav-icon/Cicon.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/fav-icon/Cicon.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/fav-icon/Cicon.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="images/fav-icon/Cicon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/fav-icon/Cicon.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="images/fav-icon/Cicon.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/fav-icon/Cicon.png">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+		rel="stylesheet">
+
+
+	<!-- Custom Css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<!-- Theme-Color css -->
+	<link rel="stylesheet" id="jssDefault" href="css/color.css">
+
+
+	<!-- Fixing Internet Explorer ______________________________________-->
+
+	<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="vendor/html5shiv.js"></script>
+		<![endif]-->
+
+
+
+
+
+
+
+
+	<style>
+		/* Professional FAQ image styling */
+		.faq-image-box {
+			position: relative;
+			overflow: hidden;
+			border-radius: 8px;
+			box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+			transition: all 0.4s ease;
+		}
+
+		.faq-image-box:hover {
+			box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
+			transform: translateY(-4px);
+		}
+
+		.faq-image-box img {
+			width: 100%;
+			height: 100%;
+			display: block;
+			object-fit: cover;
+			aspect-ratio: 4 / 3;
+			transition: transform 0.6s ease;
+		}
+
+		.faq-image-box:hover img {
+			transform: scale(1.05);
+		}
+
+		/* Optional: subtle dark gradient for depth */
+		.faq-image-box::after {
+			content: "";
+			position: absolute;
+			inset: 0;
+			background: linear-gradient(to bottom,
+					rgba(0, 0, 0, 0) 60%,
+					rgba(0, 0, 0, 0.15) 100%);
+			pointer-events: none;
+			border-radius: 8px;
+		}
+
+		/* ===================== WHO WE ARE ===================== */
+
+		/* Montserrat for the whole section */
+		.welcome_section,
+		.welcome_section p,
+		.welcome_section a,
+		.welcome_section li,
+		.welcome_section span,
+		.welcome_section h2 {
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		.welcome_section {
+			padding: 50px 0;
+			background: #fff;
+		}
+
+		/* ---- Eyebrow label ---- */
+		.welcome_section .eyebrow_label {
+			display: inline-block;
+			font-size: 11px;
+			font-weight: 600;
+			letter-spacing: 3px;
+			text-transform: uppercase;
+			color: #24bbd0;
+			border-left: 3px solid #24bbd0;
+			padding: 2px 0 2px 14px;
+			margin-bottom: 22px;
+		}
+
+		/* ---- Headline ---- */
+		.welcome_section .theme_title h2 {
+			font-size: 36px;
+			line-height: 1.3;
+			margin: 0 0 28px 0;
+			font-weight: 700;
+			color: #1a1a1a;
+			letter-spacing: -0.3px;
+		}
+
+		.welcome_section .theme_title h2 span {
+			color: #24bbd0;
+		}
+
+		/* ---- Paragraphs ---- */
+		.welcome_section .lead_text {
+			font-size: 16px;
+			line-height: 1.8;
+			color: #4a4a4a;
+			font-weight: 400;
+			margin-bottom: 20px;
+		}
+
+		.welcome_section .lead_text strong {
+			color: #1a1a1a;
+			font-weight: 600;
+		}
+
+		.welcome_section p {
+			font-size: 15px;
+			line-height: 1.85;
+			color: #666;
+			font-weight: 400;
+		}
+
+		/* ---- Trust list ---- */
+		.welcome_section .trust_list {
+			list-style: none;
+			padding: 0;
+			margin: 26px 0 32px 0;
+		}
+
+		.welcome_section .trust_list li {
+			font-size: 14px;
+			color: #333;
+			padding: 7px 0;
+			font-weight: 500;
+			letter-spacing: 0.2px;
+		}
+
+		.welcome_section .trust_list li i {
+			color: #24bbd0;
+			margin-right: 12px;
+			font-size: 13px;
+		}
+
+		/* ---- Outline button ---- */
+		.welcome_section .btn_outline {
+			display: inline-block;
+			padding: 14px 30px;
+			border: 2px solid #24bbd0;
+			color: #24bbd0;
+			background: #fff;
+			font-size: 13px;
+			font-weight: 600;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			text-decoration: none;
+			border-radius: 3px;
+			transition: all 0.3s ease;
+		}
+
+		.welcome_section .btn_outline i {
+			margin-left: 10px;
+			transition: transform 0.3s ease;
+		}
+
+		.welcome_section .btn_outline:hover {
+			background: #24bbd0;
+			color: #fff;
+		}
+
+		.welcome_section .btn_outline:hover i {
+			transform: translateX(5px);
+		}
+
+		/* ---- Image Card ---- */
+		.welcome_section .image_card_wrap {
+			position: relative;
+			padding: 0 45px 45px 0;
+		}
+
+		.welcome_section .image_card {
+			position: relative;
+			overflow: hidden;
+			border-radius: 6px;
+			box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
+			z-index: 2;
+		}
+
+		.welcome_section .image_card img {
+			width: 100%;
+			display: block;
+			transition: transform 0.6s ease;
+		}
+
+		.welcome_section .image_card:hover img {
+			transform: scale(1.04);
+		}
+
+		/* Corner accent — #24bbd0 block behind card */
+		.welcome_section .corner_accent {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			width: 55%;
+			height: 55%;
+			background: #24bbd0;
+			border-radius: 6px;
+			z-index: 1;
+			opacity: 0.95;
+		}
+
+		/* Ribbon badge — #24bbd0 */
+		.welcome_section .card_ribbon {
+			position: absolute;
+			top: 207px;
+			left: 5px;
+			padding: 16px 22px;
+			background: #24bbd0;
+			border-radius: 4px;
+			color: #fff;
+			display: flex;
+			align-items: center;
+			gap: 12px;
+			box-shadow: 0 12px 30px rgba(36, 187, 208, 0.35);
+			z-index: 3;
+		}
+
+		.welcome_section .card_ribbon .ribbon_num {
+			font-size: 26px;
+			font-weight: 700;
+			line-height: 1;
+			border-right: 1px solid rgba(255, 255, 255, 0.35);
+			padding-right: 12px;
+		}
+
+		.welcome_section .card_ribbon .ribbon_text {
+			font-size: 12px;
+			line-height: 1.35;
+			font-weight: 500;
+			letter-spacing: 0.3px;
+		}
+
+		/* ---- Responsive ---- */
+		@media (max-width: 991px) {
+			.welcome_section {
+				padding: 80px 0;
+			}
+
+			.welcome_section .theme_title h2 {
+				font-size: 30px;
+			}
+
+			.welcome_section .image_card_wrap {
+				margin-top: 45px;
+				padding: 0 30px 30px 0;
+			}
+
+			.welcome_section .card_ribbon {
+				top: 22px;
+				left: 22px;
+				padding: 13px 18px;
+			}
+
+			.welcome_section .card_ribbon .ribbon_num {
+				font-size: 22px;
+			}
+		}
+
+		@media (max-width: 575px) {
+			.welcome_section .theme_title h2 {
+				font-size: 26px;
+			}
+
+			.welcome_section .card_ribbon {
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 6px;
+			}
+
+			.welcome_section .card_ribbon .ribbon_num {
+				border-right: none;
+				border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+				padding-right: 0;
+				padding-bottom: 6px;
+			}
+		}
+	</style>
+</head>
+
+
+
+<body>
+	<div class="main_page">
+
+
+		<!-- ==================== Style Switcher ==================== -->
+
+
+		<!-- ==================== Style Switcher ==================== -->
+
+		<!-- Header ******************************* -->
+		<header>
+			<div class="top_header color1_bg">
+				<div class="container">
+					<div class="pull-left select_state">
+						<p>Welcome to Castle Ventures</p>
+
+					</div>
+
+					<div class="pull-right">
+						<div class="state" id="value1">
+							<ul>
+								<li><i class="fa fa-phone" aria-hidden="true"></i> Call Us: 257 700 1430</li>
+								<li><i class="fa fa-envelope-o" aria-hidden="true"></i> Mail Us :
+									info@castleventures.com
+								</li>
+								<!-- <li><i class="fa fa-skype" aria-hidden="true"></i> ADD US : Dynamic Consulting</li> -->
+							</ul>
+						</div>
+
+						<div class="state" id="value2">
+							<ul>
+								<li><i class="fa fa-phone" aria-hidden="true"></i> CALL US: 207 700 1430</li>
+								<li><i class="fa fa-envelope-o" aria-hidden="true"></i> Mail Us :
+									info@castleventures.com
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div> <!-- End of .container -->
+			</div> <!-- End of .top_header -->
+
+			<div class="bottom_header color2_bg">
+				<div class="container header_wrap">
+					<a href="index.html" class="pull-left logo"><img src="images/logo/logo.png" alt="LOGO"
+							style="max-width:180px;"></a>
+
+
+					<ul class="bottom_header_address pull-right">
+						<li><span class="ficon flaticon-map"></span>
+							<p>007 Edgar Buildings,<br>George Street, CA 03, USA</p>
+						</li>
+						<li><span class="ficon flaticon-clock"></span>
+							<p>Mon - Sat 9.00 - 20.00, <br>Sunday CLOSED</p>
+						</li>
+						<li>
+							<ul class="social_icon">
+								<li><a href="" class="tran3s"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<!-- <li><a href="" class="tran3s"><i class="fa fa-twitter" aria-hidden="true"></i></a></li> -->
+								<li><a href="" class="tran3s"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+								<li><a href="" class="tran3s"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+
+
+
+
+		<!-- Menu ******************************* -->
+		<div class="theme_menu">
+			<div class="container">
+				<nav class="menuzord pull-left" id="main_menu">
+					<ul class="menuzord-menu">
+						<li class="current_page"><a href="index.html">Home</a></li>
+						<li><a href="about-us.html">About Us</a></li>
+						<li><a href="portfolio.html">Portfolio</a></li>
+						<li><a href="approach.html">Our Approach</a></li>
+						<li><a href="team.html">Team</a></li>
+						<li><a href="insights.html">Insights</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul> <!-- End of .menuzord-menu -->
+				</nav> <!-- End of #main_menu -->
+
+
+				<!-- ******* Cart And Search Option ******** -->
+
+				<a href="index.html" class="sticky_logo"><img src="images/logo/logo.png" alt="LOGO"
+						style="max-width:14%;"></a>
+			</div> <!-- End of .conatiner -->
+		</div> <!-- End of .theme_menu -->
+
+
+
+
+		<!-- Banner ____________________________________ -->
+		<div id="banner">
+			<div class="rev_slider_wrapper">
+				<!-- START REVOLUTION SLIDER 5.0 auto mode -->
+				<div id="main_slider" class="rev_slider" data-version="5.0">
+					<ul>
+
+						<!-- SLIDE1  -->
+						<li data-index='rs-377' data-transition='curtain-1' data-slotamount='default'
+							data-easein='default' data-easeout='default' data-masterspeed='default'
+							data-thumb='images/home/slide-1.jpg' data-rotate='0' data-saveperformance='off'
+							data-title='Business Solutions' data-description=''>
+							<!-- MAIN IMAGE -->
+							<img src="images/home/slide-1.jpg" alt="image" data-bgposition="center center"
+								data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
+							<!-- LAYERS -->
+
+							<!-- LAYER NR. 1 -->
+							<div class="tp-caption tp-resizeme rs-parallaxlevel-3"
+								data-x="['left','left','left','left']" data-hoffset="['0','0','35','0']"
+								data-y="['middle','middle','middle','middle']" data-voffset="['-82','-82','-82','-82']"
+								data-width="none" data-height="none" data-transform_idle="o:1;"
+								data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
+								data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+								data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+								data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000"
+								data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05"
+								style="z-index: 5;">
+								<h1>The Power of Capital.<br>The Advantage of Community.</h1>
+							</div>
+
+							<!-- LAYER NR. 2 -->
+							<div class="tp-caption tp-resizeme rs-parallaxlevel-2"
+								data-x="['left','left','left','left']" data-hoffset="['0','0','35','0']"
+								data-y="['middle','middle','middle','middle']" data-voffset="['76','76','76','45']"
+								data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;"
+								data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+								data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+								data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1500"
+								data-splitin="none" data-splitout="none" data-responsive_offset="on"
+								style="z-index: 6; white-space: nowrap;">
+								<p>We provide capital, strategic support, experience, and valuable<br>connections to
+									help businesses grow and achieve their potential.</p>
+
+							</div>
+
+							<div class="tp-caption tp-resizeme rs-parallaxlevel-2"
+								data-x="['left','left','left','left']" data-hoffset="['0','0','35','0']"
+								data-y="['middle','middle','middle','middle']" data-voffset="['179','179','179','149']"
+								data-transform_idle="o:1;"
+								data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+								data-style_hover="c:rgba(0, 154, 238, 1.00);bc:rgba(0, 154, 238, 1.00);cursor:pointer;"
+								data-transform_in="x:[-100%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2500;e:Power3.easeInOut;"
+								data-transform_out="auto:auto;s:1000;e:Power2.easeInOut;" data-start="2500"
+								data-splitin="none" data-splitout="none" data-responsive_offset="on">
+								<a href="contact.html" class="contact_us color1_bg">Partner With Us</a>
+							</div>
+
+							<div class="tp-caption tp-resizeme rs-parallaxlevel-2"
+								data-x="['left','left','left','left']" data-hoffset="['193','193','228','193']"
+								data-y="['middle','middle','middle','middle']" data-voffset="['179','179','179','149']"
+								data-transform_idle="o:1;"
+								data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+								data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(114, 168, 0, 1.00);cursor:pointer;"
+								data-transform_in="x:[100%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2500;e:Power3.easeInOut;"
+								data-transform_out="auto:auto;s:1000;e:Power2.easeInOut;" data-start="2500"
+								data-splitin="none" data-splitout="none" data-responsive_offset="on">
+								<a href="service.html" class="color2_bg our_service">View Portfolio</a>
+							</div>
+
+						</li>
+
+
+
+						<!-- SLIDE2  -->
+						<li data-index="rs-18" data-transition="zoomin" data-slotamount="7"
+							data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"
+							data-thumb="images/home/slide-2.jpg" data-rotate="0" data-saveperformance="off"
+							data-title="Successful Careers" data-description="">
+							<!-- MAIN IMAGE -->
+							<img src="images/home/slide-2.jpg" alt="" data-bgposition="top center" class="rev-slidebg"
+								data-no-retina="">
+							<!-- LAYERS -->
+
+							<!-- LAYER NR. 1 -->
+							<div class="tp-caption tp-resizeme" data-x="['right','right','right','right']"
+								data-hoffset="['0','0','0','20']" data-y="['middle','middle','middle','middle']"
+								data-voffset="['-82','-82','-82','-82']" data-width="none" data-height="none"
+								data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;"
+								data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+								data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+								data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000"
+								data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05"
+								style="z-index: 5;">
+								<h1>We are Committed <br>to your Success</h1>
+							</div>
+
+							<!-- LAYER NR. 2 -->
+							<div class="tp-caption tp-resizeme" data-x="['right','right','right','right']"
+								data-hoffset="['40','40','40','5']" data-y="['middle','middle','middle','middle']"
+								data-voffset="['76','76','76','45']" data-width="none" data-height="none"
+								data-whitespace="nowrap" data-transform_idle="o:1;"
+								data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
+								data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+								data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+								data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1500"
+								data-splitin="none" data-splitout="none" data-responsive_offset="on"
+								style="z-index: 6; white-space: nowrap;">
+								<p>We're here to offer the best support, to help <br>you navigate any business
+									challenge.</p>
+							</div>
+
+							<div class="tp-caption tp-resizeme" data-x="['center','center','center','center']"
+								data-hoffset="['73','-23','-122',-142']" data-y="['middle','middle','middle','middle']"
+								data-voffset="['179','179','179','149']" data-transform_idle="o:1;"
+								data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+								data-style_hover="c:rgba(0, 154, 238, 1.00);bc:rgba(0, 154, 238, 1.00);cursor:pointer;"
+								data-transform_in="x:[-100%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2500;e:Power3.easeInOut;"
+								data-transform_out="auto:auto;s:1000;e:Power2.easeInOut;" data-start="2500"
+								data-splitin="none" data-splitout="none" data-responsive_offset="on">
+								<a href="contact.html" class="contact_us color1_bg">Partner With Us</a>
+							</div>
+
+							<div class="tp-caption tp-resizeme" data-x="['center','center','center','center']"
+								data-hoffset="['266','170','68',40']" data-y="['middle','middle','middle','middle']"
+								data-voffset="['179','179','179','149']" data-transform_idle="o:1;"
+								data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+								data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(114, 168, 0, 1.00);cursor:pointer;"
+								data-transform_in="x:[100%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2500;e:Power3.easeInOut;"
+								data-transform_out="auto:auto;s:1000;e:Power2.easeInOut;" data-start="2500"
+								data-splitin="none" data-splitout="none" data-responsive_offset="on">
+								<a href="service.html" class="color2_bg our_service">Our Approach</a>
+							</div>
+						</li>
+
+
+
+
+						<!-- SLIDE3  -->
+						<li data-index="rs-20" data-transition="zoomin" data-slotamount="7"
+							data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"
+							data-thumb="images/home/slide-3.jpg" data-rotate="0" data-saveperformance="off"
+							data-title="Your Success" data-description="">
+							<!-- MAIN IMAGE -->
+							<img src="images/home/slide-3.jpg" alt="" data-bgposition="top center" class="rev-slidebg"
+								data-no-retina="">
+							<!-- LAYERS -->
+
+							<!-- LAYER NR. 1 -->
+							<div class="tp-caption tp-resizeme" data-x="['left','left','left','left']"
+								data-hoffset="['0','0','35','0']" data-y="['middle','middle','middle','middle']"
+								data-voffset="['-82','-82','-82','-82']" data-width="none" data-height="none"
+								data-transform_idle="o:1;"
+								data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;"
+								data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+								data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+								data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000"
+								data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05"
+								style="z-index: 5;">
+								<h1>We work with founders, <br>not just invest in them.</h1>
+							</div>
+
+							<!-- LAYER NR. 2 -->
+							<div class="tp-caption tp-resizeme" data-x="['left','left','left','left']"
+								data-hoffset="['0','0','35','0']" data-y="['middle','middle','middle','middle']"
+								data-voffset="['76','76','76','45']" data-width="none" data-height="none"
+								data-whitespace="nowrap" data-transform_idle="o:1;"
+								data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
+								data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+								data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+								data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1500"
+								data-splitin="none" data-splitout="none" data-responsive_offset="on"
+								style="z-index: 6; white-space: nowrap;">
+								<p>We can develop innovative capital solutions <br>to improve the lives of founders in
+									need</p>
+
+							</div>
+
+							<div class="tp-caption tp-resizeme" data-x="['left','left','left','left']"
+								data-hoffset="['0','0','35','0']" data-y="['middle','middle','middle','middle']"
+								data-voffset="['179','179','179','149']" data-transform_idle="o:1;"
+								data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+								data-style_hover="c:rgba(0, 154, 238, 1.00);bc:rgba(0, 154, 238, 1.00);cursor:pointer;"
+								data-transform_in="x:[-100%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2500;e:Power3.easeInOut;"
+								data-transform_out="auto:auto;s:1000;e:Power2.easeInOut;" data-start="2500"
+								data-splitin="none" data-splitout="none" data-responsive_offset="on">
+								<a href="contact.html" class="contact_us color1_bg">Contact us</a>
+							</div>
+
+							<div class="tp-caption tp-resizeme" data-x="['left','left','left','left']"
+								data-hoffset="['193','193','228','193']" data-y="['middle','middle','middle','middle']"
+								data-voffset="['179','179','179','149']" data-transform_idle="o:1;"
+								data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+								data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(114, 168, 0, 1.00);cursor:pointer;"
+								data-transform_in="x:[100%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2500;e:Power3.easeInOut;"
+								data-transform_out="auto:auto;s:1000;e:Power2.easeInOut;" data-start="2500"
+								data-splitin="none" data-splitout="none" data-responsive_offset="on">
+								<a href="service.html" class="color2_bg our_service">Our Services</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div><!-- END REVOLUTION SLIDER -->
+		</div> <!-- End of #banner -->
+
+
+
+
+		<!-- Wellcome Section ************************** -->
+		<!-- Who We Are ************************** -->
+		<div class="welcome_section">
+			<div class="container">
+				<div class="row">
+
+					<!-- Left: Content -->
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 wow fadeInLeft">
+
+						<span class="eyebrow_label">WHO WE ARE</span>
+
+						<div class="theme_title">
+							<h2>A Capital Partner Built<br>Around <span>Founders.</span></h2>
+						</div>
+
+						<p class="lead_text">
+							Castle Ventures is a capital firm focused on supporting promising
+							companies and entrepreneurs. We provide capital,
+							strategic support, experience, and
+							valuable connections to help businesses grow and
+							achieve their potential.
+						</p>
+
+
+
+						<ul class="trust_list">
+							<li><i class="fa fa-caret-right"></i> Capital + Expertise + Community</li>
+							<li><i class="fa fa-caret-right"></i> Long-term partnership model</li>
+							<li><i class="fa fa-caret-right"></i> Hands-on operational support</li>
+						</ul>
+
+						<a href="about-us.html" class="btn_outline tran3s">
+							Learn More About Us <i class="fa fa-long-arrow-right"></i>
+						</a>
+					</div>
+
+					<!-- Right: Image Card -->
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+						<div class="image_card_wrap wow fadeInRight">
+
+							<span class="corner_accent"></span>
+
+							<div class="image_card">
+								<img src="images/home/1.jpg" alt="Castle Ventures">
+							</div>
+
+							<div class="card_ribbon">
+								<span class="ribbon_num">12+</span>
+								<span class="ribbon_text">Years Partnering<br>with Founders</span>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div> <!-- End of .welcome_section -->
+
+
+		<!-- What makes us Special ************************ -->
+		<div class="makesUs_special">
+			<div class="overlay">
+				<div class="container">
+					<div class="row">
+						<!-- _____________ Item ____________ -->
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+							<div class="special_item clear_fix">
+								<div class="icon pull-left"><span class="ficon flaticon-peopletwo"></span></div>
+								<!-- End of .icon -->
+								<div class="text pull-left">
+									<span class="timer" data-from="1" data-to="85" data-speed="1000"
+										data-refresh-interval="50">85</span>
+									<p>Portfolio Companies</p>
+								</div> <!-- End of .text -->
+
+							</div> <!-- End of .special_item -->
+						</div> <!-- End of .col -->
+
+						<!-- _____________ Item ____________ -->
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+							<div class="special_item clear_fix">
+								<div class="icon pull-left"><span class="ficon flaticon-screen"></span></div>
+								<!-- End of .icon -->
+								<div class="text pull-left">
+									<span class="timer" data-from="0" data-to="14" data-speed="1000"
+										data-refresh-interval="50">14</span>
+									<p>Industries Backed</p>
+								</div> <!-- End of .text -->
+
+							</div> <!-- End of .special_item -->
+						</div> <!-- End of .col -->
+
+						<!-- _____________ Item ____________ -->
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+							<div class="special_item clear_fix">
+								<div class="icon pull-left"><span class="ficon flaticon-badge"></span></div>
+								<!-- End of .icon -->
+								<div class="text pull-left">
+									<span class="timer" data-from="0" data-to="12" data-speed="1000"
+										data-refresh-interval="50">12</span>
+									<p>Years Together</p>
+								</div> <!-- End of .text -->
+
+							</div> <!-- End of .special_item -->
+						</div> <!-- End of .col -->
+
+
+						<!-- _____________ Item ____________ -->
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+							<div class="special_item clear_fix">
+								<div class="icon pull-left"><span class="ficon flaticon-smile"></span></div>
+								<!-- End of .icon -->
+								<div class="text pull-left">
+									<span class="timer" data-from="0" data-to="200" data-speed="1000"
+										data-refresh-interval="50">200</span><span></span>
+									<p>Founders</p>
+								</div> <!-- End of .text -->
+
+							</div> <!-- End of .special_item -->
+						</div> <!-- End of .col -->
+
+					</div> <!-- End of .row -->
+				</div> <!-- End of .container -->
+			</div> <!-- End of .overlay -->
+		</div> <!-- End of .makesUs_special -->
+
+
+		<!-- Request Quote ******************************* -->
+		<div class="request_quote">
+			<div class="overlay">
+				<div class="container">
+					<p class="pull-left">Capital + expertise + community → creating opportunities for growth <br> and
+						long-term success.</p>
+					<a href="contact.html" class="color1_bg pull-right tran3s">Contact Us</a>
+				</div> <!-- End of .container -->
+			</div>
+		</div>
+
+
+
+		<!-- Our Service ****************************** -->
+		<div class="our_service">
+			<div class="container">
+				<div class="theme_title">
+					<h2>What We Offer<span>.</span></h2>
+				</div>
+
+				<div class="row">
+					<div class="service_slider owl-carousel owl-theme">
+
+						<div class="item">
+							<div class="img_holder">
+								<img src="images/home/3.jpg" alt="images">
+								<div class="overlay tran3s"><a href="turnaround.html">
+										<div><span class="color1_bg">+</span></div>
+									</a></div>
+							</div>
+							<div class="text">
+								<a href="turnaround.html">
+									<h5>Growth Capital</h5>
+								</a>
+								<p>Flexible capital solutions designed to help companies scale, expand into new markets,
+									and pursue strategic opportunities at critical growth stages.</p>
+							</div>
+						</div> <!-- End of .item -->
+
+						<div class="item">
+							<div class="img_holder">
+								<img src="images/home/4.jpg" alt="images">
+								<div class="overlay tran3s"><a href="business-planning.html">
+										<div><span class="color1_bg">+</span></div>
+									</a></div>
+							</div>
+							<div class="text">
+								<a href="business-planning.html">
+									<h5>Business Plannning</h5>
+								</a>
+								<p>It may also contain background information about business the organization or team
+									attempting to reach those goals</p>
+							</div>
+						</div> <!-- End of .item -->
+
+						<div class="item">
+							<div class="img_holder">
+								<img src="images/home/5.jpg" alt="images">
+								<div class="overlay tran3s"><a href="exit-succession.html">
+										<div><span class="color1_bg">+</span></div>
+									</a></div>
+							</div>
+							<div class="text">
+								<a href="exit-succession.html">
+									<h5>Strategic Support</h5>
+								</a>
+								<p>Hands-on guidance from experienced operators who have built and scaled companies
+									across multiple industries and economic cycles.</p>
+							</div>
+						</div> <!-- End of .item -->
+
+						<div class="item">
+							<div class="img_holder">
+								<img src="images/home/6.jpg" alt="images">
+								<div class="overlay tran3s"><a href="strategic-planning.html">
+										<div><span class="color1_bg">+</span></div>
+									</a></div>
+							</div>
+							<div class="text">
+								<a href="strategic-planning.html">
+									<h5>Community & Network</h5>
+								</a>
+								<p>Access to a curated network of founders, operators, investors, and advisors who share
+									knowledge, open doors, and create opportunities.</p>
+							</div>
+						</div> <!-- End of .item -->
+
+						<div class="item">
+							<div class="img_holder">
+								<img src="images/home/7.jpg" alt="images">
+								<div class="overlay tran3s"><a href="global-risk.html">
+										<div><span class="color1_bg">+</span></div>
+									</a></div>
+							</div>
+							<div class="text">
+								<a href="global-risk.html">
+									<h5>Operational Expertise </h5>
+								</a>
+								<p>Deep operational knowledge across finance, go-to-market, product, and talent to help
+									portfolio companies execute efficiently.</p>
+							</div>
+						</div> <!-- End of .item -->
+
+						<div class="item">
+							<div class="img_holder">
+								<img src="images/home/8.jpg" alt="images">
+								<div class="overlay tran3s"><a href="audit-assurance.html">
+										<div><span class="color1_bg">+</span></div>
+									</a></div>
+							</div>
+							<div class="text">
+								<a href="audit-assurance.html">
+									<h5>Follow-On Investment</h5>
+								</a>
+								<p>Continued support through subsequent funding rounds to help our portfolio companies
+									maintain momentum and achieve milestones.</p>
+							</div>
+						</div> <!-- End of .item -->
+
+						<div class="item">
+							<div class="img_holder">
+								<img src="images/home/9.jpg" alt="images">
+								<div class="overlay tran3s"><a href="trades-stocks.html">
+										<div><span class="color1_bg">+</span></div>
+									</a></div>
+							</div>
+							<div class="text">
+								<a href="trades-stocks.html">
+									<h5>Exit Strategy</h5>
+								</a>
+								<p>Strategic guidance on timing, structuring, and executing exits that maximize value
+									for founders, employees, and stakeholders.</p>
+							</div>
+						</div> <!-- End of .item -->
+
+
+					</div> <!-- End of .service_slider -->
+				</div>
+			</div>
+		</div> <!-- End of .our_service -->
+
+
+
+		<!-- Why Choose Us******************************* -->
+		<div class="why_choose_us">
+			<div class="overlay">
+				<div class="container">
+					<img src="images/home/man.png" alt="image">
+					<div class="row">
+						<!-- ______________ Item _____________ -->
+						<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+							<div class="choose_us_item tran3s clear_fix wow fadeInLeft">
+								<div class="icon pull-left"><span class="ficon flaticon-hexagon"></span></div>
+								<!-- End of .icon -->
+								<div class="text pull-left">
+									<h5 class="tran3s">Founder-First Approach</h5>
+									<p class="tran3s">We back founders' vision while providing the support to scale.
+
+										.</p>
+								</div> <!-- End of .text -->
+								<div class="clear_fix"></div>
+							</div> <!-- End of .choose_us_item -->
+
+							<div class="choose_us_item tran3s clear_fix wow fadeInLeft">
+								<div class="icon pull-left"><span class="ficon flaticon-twopeople"></span></div>
+								<!-- End of .icon -->
+								<div class="text pull-left">
+									<h5 class="tran3s">Long-Term Partnership</h5>
+									<p class="tran3s">We invest for the long haul, supporting companies through multiple
+										stages of growth.</p>
+								</div> <!-- End of .text -->
+								<div class="clear_fix"></div>
+							</div> <!-- End of .choose_us_item -->
+
+							<div class="choose_us_item tran3s clear_fix wow fadeInLeft">
+								<div class="icon pull-left"><span class="ficon flaticon-user"></span></div>
+								<!-- End of .icon -->
+								<div class="text pull-left">
+									<h5 class="tran3s">Hands-On Support</h5>
+									<p class="tran3s">We roll up our sleeves and work alongside our portfolio companies.
+									</p>
+								</div> <!-- End of .text -->
+								<div class="clear_fix"></div>
+							</div> <!-- End of .choose_us_item -->
+						</div> <!-- End of .col -->
+
+						<!-- ______________ Item _____________ -->
+						<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+							<div class="choose_us_item tran3s clear_fix wow fadeInRight">
+								<div class="icon pull-left"><span class="ficon flaticon-web"></span></div>
+								<!-- End of .icon -->
+								<div class="text pull-left">
+									<h5 class="tran3s">Global Network</h5>
+									<p class="tran3s">Connections across industries, geographies, and stages to open
+										doors and create opportunities.</p>
+								</div> <!-- End of .text -->
+								<div class="clear_fix"></div>
+							</div> <!-- End of .choose_us_item -->
+
+							<div class="choose_us_item tran3s clear_fix wow fadeInRight">
+								<div class="icon pull-left"><span class="ficon flaticon-people"></span></div>
+								<!-- End of .icon -->
+								<div class="text pull-left">
+									<h5 class="tran3s">Operational Experience</h5>
+									<p class="tran3s">Team members who have built, scaled, and exited companies
+										themselves.</p>
+								</div> <!-- End of .text -->
+								<div class="clear_fix"></div>
+							</div> <!-- End of .choose_us_item -->
+
+							<div class="choose_us_item tran3s clear_fix wow fadeInRight">
+								<div class="icon pull-left"><span class="ficon flaticon-telephone"></span></div>
+								<!-- End of .icon -->
+								<div class="text pull-left">
+									<h5 class="tran3s">Always Available</h5>
+									<p class="tran3s">When our portfolio companies need us, we're there—day or night.
+									</p>
+								</div> <!-- End of .text -->
+								<div class="clear_fix"></div>
+							</div> <!-- End of .choose_us_item -->
+
+						</div> <!-- End of .col -->
+					</div>
+				</div> <!-- End of .container -->
+			</div> <!-- End of .overlay -->
+		</div> <!-- End of .why_choose_us -->
+
+
+
+
+		<!-- Testimonial****************************** -->
+		<div class="testimonial">
+			<div class="container">
+				<div class="theme_title">
+					<h2>Testimonials<span>.</span></h2>
+				</div>
+				<div class="row">
+					<div class="testimonial-slider">
+						<div class="item">
+							<div class="text">
+								<span class="ficon flaticon-quotes"></span>
+								<p>Castle Ventures didn't just write a check—they became true partners. Their network
+									opened doors we didn't know existed, and their operational expertise helped us
+									navigate critical growth decisions.</p>
+							</div>
+							<span class="arrow"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+							<div class="author">
+								<img src="images/home/12.jpg" alt="image">
+								<h5>David Chen <span>- CEO, TechFlow</span> </h5>
+								<ul>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="text">
+								<span class="ficon flaticon-quotes"></span>
+								<p>What sets Castle Ventures apart is their genuine commitment to founder success. They
+									understand the challenges of scaling a business because they've been there
+									themselves.</p>
+							</div>
+							<span class="arrow"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+							<div class="author">
+								<img src="images/home/13.jpg" alt="image">
+								<h5>Marcus Rivera <span>- Founder, GreenScale</span> </h5>
+								<ul>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="text">
+								<span class="ficon flaticon-quotes"></span>
+								<p>The Castle Ventures community is invaluable. Being able to connect with other
+									founders facing similar challenges has been game-changing.</p>
+							</div>
+							<span class="arrow"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+							<div class="author">
+								<img src="images/home/14.jpg" alt="image">
+								<h5>James Nakamura <span>- CEO, Lumina Health</span> </h5>
+								<ul>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+								</ul>
+							</div>
+						</div>
+
+					</div> <!-- End of .testimonial-slider -->
+				</div> <!-- End of .row -->
+			</div> <!-- End of .container -->
+		</div> <!-- End of .testimonial -->
+
+
+
+
+
+		<!-- Our Team **************************** -->
+		<div class="our_team">
+			<div class="overlay">
+				<div class="container">
+					<div class="theme_title_center">
+						<h2>Our Team<span>.</span></h2>
+						<span></span>
+					</div>
+
+					<div class="row">
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+							<div class="team_member wow fadeInUp">
+								<div class="img_holder">
+									<img src="images/team/1.jpg" alt="images">
+									<div class="opacity tran3s"></div>
+								</div>
+								<div class="text">
+									<a href="team-single.html">
+										<h5>James Castle</h5>
+										<span>Founder & Managing Partner</span>
+										<p>James founded Castle Ventures after two decades of building and scaling
+											companies. He leads investment strategy and partner relationships.</p>
+									</a>
+									<ul class="social_icon">
+										<li><a href="" class="tran3s"><i class="fa fa-facebook"
+													aria-hidden="true"></i></a></li>
+
+										<li><a href="" class="tran3s"><i class="fa fa-skype" aria-hidden="true"></i></a>
+										</li>
+										<li><a href="" class="tran3s"><i class="fa fa-linkedin"
+													aria-hidden="true"></i></a></li>
+									</ul>
+								</div> <!-- End of .text -->
+							</div> <!-- End of .team_member -->
+						</div>
+
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+							<div class="team_member wow fadeInUp">
+								<div class="img_holder">
+									<img src="images/team/2.jpg" alt="images">
+									<div class="opacity tran3s"></div>
+								</div>
+								<div class="text">
+									<a href="team-single.html">
+										<h5>Rachel Morrison</h5>
+										<span>Partner, Operations</span>
+										<p>Rachel brings deep operational expertise from her time as COO at two
+											venture-backed startups. She works closely with portfolio companies on
+											scaling.</p>
+									</a>
+									<ul class="social_icon">
+										<li><a href="" class="tran3s"><i class="fa fa-facebook"
+													aria-hidden="true"></i></a></li>
+
+										<li><a href="" class="tran3s"><i class="fa fa-skype" aria-hidden="true"></i></a>
+										</li>
+										<li><a href="" class="tran3s"><i class="fa fa-linkedin"
+													aria-hidden="true"></i></a></li>
+									</ul>
+								</div> <!-- End of .text -->
+							</div> <!-- End of .team_member -->
+						</div>
+
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+							<div class="team_member wow fadeInUp">
+								<div class="img_holder">
+									<img src="images/team/3.jpg" alt="images">
+									<div class="opacity tran3s"></div>
+								</div>
+								<div class="text">
+									<a href="team-single.html">
+										<h5>David Okonkwo</h5>
+										<span>Partner, Investments</span>
+										<p>David leads deal sourcing and due diligence. He has evaluated thousands of
+											companies and specializes in identifying exceptional founders.</p>
+									</a>
+									<ul class="social_icon">
+										<li><a href="" class="tran3s"><i class="fa fa-facebook"
+													aria-hidden="true"></i></a></li>
+
+										<li><a href="" class="tran3s"><i class="fa fa-skype" aria-hidden="true"></i></a>
+										</li>
+										<li><a href="" class="tran3s"><i class="fa fa-linkedin"
+													aria-hidden="true"></i></a></li>
+									</ul>
+								</div> <!-- End of .text -->
+							</div> <!-- End of .team_member -->
+						</div>
+
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+							<div class="team_member wow fadeInUp">
+								<div class="img_holder">
+									<img src="images/team/4.jpg" alt="images">
+									<div class="opacity tran3s"></div>
+								</div>
+								<div class="text">
+									<a href="team-single.html">
+										<h5>Mark Thompson</h5>
+										<span>Head of Community</span>
+										<p>Mark builds and nurtures the Castle Ventures community, connecting founders,
+											operators, and advisors across our network. </p>
+									</a>
+									<ul class="social_icon">
+										<li><a href="" class="tran3s"><i class="fa fa-facebook"
+													aria-hidden="true"></i></a></li>
+
+										<li><a href="" class="tran3s"><i class="fa fa-skype" aria-hidden="true"></i></a>
+										</li>
+										<li><a href="" class="tran3s"><i class="fa fa-linkedin"
+													aria-hidden="true"></i></a></li>
+									</ul>
+								</div> <!-- End of .text -->
+							</div> <!-- End of .team_member -->
+						</div>
+					</div> <!-- End of .row -->
+				</div> <!-- End of .container -->
+			</div> <!-- End of .overlay -->
+		</div> <!-- End of .our_team -->
+
+
+
+		<!-- FAQ******************************* -->
+		<div class="faq">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 faq_left_area wow fadeInLeft">
+						<div class="theme_title">
+							<h2>FAQ's<span>.</span></h2>
+						</div>
+						<span>Everything you need to know about partnering with Castle Ventures. Can't find what you're
+							looking for? Reach out to our team directly.</span>
+						<div class="row">
+							<div class="col-lg-6 col-md-4 col-sm-6">
+								<div class="video-box faq-image-box">
+									<img src="images/home/15.jpg" alt="Castle Ventures team" class="tran7s">
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-md-8 col-sm-6 video_text">
+								<p>We're a founder-first venture firm built on operational experience. We've walked in
+									your shoes, scaled companies, and know what it takes to turn early traction into
+									lasting success.</p>
+								<a href="faq.html">See all FAQ's <i class="fa fa-angle-double-right tran3s"
+										aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 wow fadeInRight">
+						<div class="faq_panel">
+							<div class="panel-group theme-accordion" id="accordion">
+								<div class="panel">
+									<div class="panel-heading active-panel">
+										<h6 class="panel-title">
+											<span class="icon tran3s"></span>
+											<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+												What stage do you typically invest in?</a>
+										</h6>
+									</div>
+									<div id="collapse1" class="panel-collapse collapse in">
+										<div class="panel-body">
+											<p>We focus on seed through Series B, partnering with founders who have
+												early traction and a clear vision for scale. We also selectively invest
+												in later rounds to support our existing portfolio companies.</p>
+										</div>
+									</div>
+								</div> <!-- /panel 1 -->
+								<div class="panel">
+									<div class="panel-heading">
+										<h6 class="panel-title">
+											<span class="icon tran3s"></span>
+											<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+												How involved are you with portfolio companies?</a>
+										</h6>
+									</div>
+									<div id="collapse2" class="panel-collapse collapse">
+										<div class="panel-body">
+											<p>We roll up our sleeves and work alongside founders—without overstepping.
+												From hiring to go-to-market strategy, we provide hands-on support while
+												respecting your vision and autonomy.</p>
+										</div>
+									</div>
+								</div> <!-- /panel 2 -->
+								<div class="panel">
+									<div class="panel-heading">
+										<h6 class="panel-title">
+											<span class="icon tran3s"></span>
+											<a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+												What makes Castle Ventures different?</a>
+										</h6>
+									</div>
+									<div id="collapse3" class="panel-collapse collapse">
+										<div class="panel-body">
+											<p>We're operators first, investors second. Our team has built and scaled
+												companies, so we understand the challenges founders face—and we've built
+												a community to help navigate them together.</p>
+										</div>
+									</div>
+								</div> <!-- /panel 3 -->
+
+								<div class="panel">
+									<div class="panel-heading">
+										<h6 class="panel-title">
+											<span class="icon tran3s"></span>
+											<a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+												How do I get in touch?</a>
+										</h6>
+									</div>
+									<div id="collapse4" class="panel-collapse collapse">
+										<div class="panel-body">
+											<p>Send us your pitch deck and a short intro to <a
+													href="mailto:hello@castlevelventures.com">hello@castlevelventures.com</a>.
+												We review every submission and aim to respond within two weeks.</p>
+										</div>
+									</div>
+								</div> <!-- /panel 4 -->
+							</div> <!-- end #accordion -->
+						</div> <!-- End of .faq_panel -->
+					</div>
+				</div> <!-- End of .row -->
+			</div> <!-- End of .container -->
+		</div> <!-- End of .faq -->
+
+
+
+		<!-- Partner Logo********************** -->
+
+
+
+
+
+		<!-- Request Call Back************************** -->
+		<div class="request_callBack clear_fix">
+			<div class="left_half pull-left">
+				<div class="content pull-right wow fadeInLeft">
+					<div class="theme_title">
+						<h2>Request a call back<span>.</span></h2>
+					</div>
+					<p style="margin: 55px 0 14px 0;"><span>For Founders:</span>&nbsp;&nbsp; Raising capital or looking
+						for an operating partner? Fill out our short form or send us an <a href="#"
+							class="email">email</a> and we'll get in touch shortly. Or call us toll-free at <a
+							href="#">(+1) 415-555-0123.</a></p>
+					<p><span>Office Hours :</span> 09:00 to 18:00 Mon to Fri, Sat & Sun - Closed</p>
+				</div> <!-- End of .content -->
+				<div class="clear_fix"></div>
+			</div> <!-- End of .left_half -->
+
+			<div class="right_half pull-right">
+				<div class="content pull-left wow fadeInRight">
+					<form action="#">
+						<span>I would like to discuss:</span>
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-sm-6">
+								<select class="selectmenu">
+									<option>Seed Funding</option>
+									<option>Series A / B Investment</option>
+									<option>Strategic Partnership</option>
+									<option>General Inquiry</option>
+								</select>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6">
+								<input type="text" placeholder="Your Name *">
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6">
+								<input type="email" placeholder="Your Mail *">
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6">
+								<input type="text" placeholder="Phone Number *">
+							</div>
+						</div>
+						<button class="color1_bg tran3s">Submit</button>
+					</form>
+				</div> <!-- End of .content -->
+				<div class="clear_fix"></div>
+			</div> <!-- End of .right_half -->
+		</div><!-- End of .request_callBack -->
+
+
+
+
+
+		<section id="google-map-area">
+			<iframe src="https://www.google.com/maps?q=Chicago,+Illinois,+USA&output=embed" width="100%" height="450"
+				style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+			</iframe>
+		</section>
+
+
+
+		<!-- Footer************************* -->
+		<footer>
+			<div class="main_footer">
+				<div class="container">
+					<div class="row">
+						<!-- Column 1: Brand + About -->
+						<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 footer_logo">
+							<a href="index.html"><img src="images/logo/logo.png" style="width:70%;"
+									alt="Castle Ventures Logo"></a>
+							<p>Castle Ventures is a founder-first venture firm. We back exceptional entrepreneurs with
+								capital, operational expertise, and a network built to help them scale.</p>
+							<a href="#" class="tran3s" style="font-family:'Montserrat-Regular';"><i
+									class="fa fa-caret-right" aria-hidden="true"></i> Pitch Us</a>
+							<a href="#" class="tran3s" style="font-family:'Montserrat-Regular';"><i
+									class="fa fa-caret-right" aria-hidden="true"></i> Partner With
+								Us</a>
+						</div> <!-- End of .footer_logo -->
+
+						<!-- Column 2: Quick Links -->
+						<div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 footer_news">
+							<h5>Quick Links</h5>
+							<ul>
+								<li><a href="about.html" class="tran3s">About Us</a></li>
+								<li><a href="portfolio.html" class="tran3s">Portfolio</a></li>
+								<li><a href="team.html" class="tran3s">Our Team</a></li>
+								<li><a href="blog.html" class="tran3s">Insights</a></li>
+								<li><a href="contact.html" class="tran3s">Contact</a></li>
+							</ul>
+						</div> <!-- End of .footer_news -->
+
+						<!-- Column 3: Subscribe -->
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 footer_subscribe">
+							<h5>Stay Updated</h5>
+							<p>Get our latest insights and portfolio news delivered to your inbox.</p>
+							<form action="#">
+								<input type="text" placeholder="Enter Your Email">
+								<button class="tran3s color1_bg"><i class="fa fa-envelope-o"
+										aria-hidden="true"></i></button>
+							</form>
+							<span>We respect your privacy. No spam.</span>
+
+						</div> <!-- End of .footer_subscribe -->
+
+						<!-- Column 4: Contact (static, no carousel) -->
+						<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 footer_contact">
+							<h5>Contact Us</h5>
+							<ul style="color:white;line-height: 30px;">
+								<li><span class="ficon flaticon-map"></span> 007 Edgar Buildings, George Street, CA 03,
+									USA</li>
+								<li><span class="ficon flaticon-mobile"></span> +1 (415) 555-0123</li>
+								<li><span class="ficon flaticon-message"></span> hello@castlevelventures.com</li>
+								<li><span class="ficon flaticon-clock"></span> Mon – Fri, 9:00 – 18:00</li>
+							</ul>
+						</div> <!-- End of .footer_contact -->
+					</div>
+				</div>
+			</div> <!-- End of .main_footer -->
+
+			<!-- Bottom Footer -->
+			<div class="bottom_footer clear_fix">
+				<div class="container">
+					<p class="pull-left">© 2026 Castle Ventures. All rights reserved.</p>
+					<ul class="social_icon pull-right">
+						<li><a href="" class="tran3s"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<!-- <li><a href="" class="tran3s"><i class="fa fa-twitter" aria-hidden="true"></i></a></li> -->
+						<li><a href="" class="tran3s"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+
+		<!-- Scroll Top Button -->
+		<button class="scroll-top tran3s">
+			<span class="ficon flaticon-up-arrow"></span>
+		</button>
+		<!-- pre loader  -->
+		<div id="loader-wrapper">
+			<div id="loader"></div>
+		</div>
+
+
+
+		<!-- Js File_________________________________ -->
+
+		<!-- j Query -->
+		<script type="text/javascript" src="vendor/jquery-2.1.4.js"></script>
+		<!-- Bootstrap JS -->
+		<script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+
+		<!-- Vendor js _________ -->
+		<!-- Google map js -->
+		<script src="http://maps.google.com/maps/api/js"></script> <!-- Gmap Helper -->
+		<script src="vendor/gmap.js"></script>
+		<!-- owl.carousel -->
+		<script type="text/javascript" src="vendor/owl-carousel/owl.carousel.min.js"></script>
+		<!-- ui js -->
+		<script type="text/javascript" src="vendor/jquery-ui/jquery-ui.min.js"></script>
+		<!-- Responsive menu-->
+		<script type="text/javascript" src="vendor/responsivemenu/files/js/menuzord.js"></script>
+		<!-- revolution -->
+		<script src="vendor/revolution/jquery.themepunch.tools.min.js"></script>
+		<script src="vendor/revolution/jquery.themepunch.revolution.min.js"></script>
+		<script type="text/javascript" src="vendor/revolution/revolution.extension.slideanims.min.js"></script>
+		<script type="text/javascript" src="vendor/revolution/revolution.extension.layeranimation.min.js"></script>
+		<script type="text/javascript" src="vendor/revolution/revolution.extension.navigation.min.js"></script>
+		<script type="text/javascript" src="vendor/revolution/revolution.extension.kenburn.min.js"></script>
+		<script type="text/javascript" src="vendor/revolution/revolution.extension.actions.min.js"></script>
+		<script type="text/javascript" src="vendor/revolution/revolution.extension.parallax.min.js"></script>
+		<script type="text/javascript" src="vendor/revolution/revolution.extension.migration.min.js"></script>
+		<!-- Fancybox js -->
+		<script type="text/javascript" src="vendor/fancy-box/jquery.fancybox.pack.js"></script>
+		<!-- js count to -->
+		<script type="text/javascript" src="vendor/jquery.appear.js"></script>
+		<script type="text/javascript" src="vendor/jquery.countTo.js"></script>
+		<!-- WOW js -->
+		<script type="text/javascript" src="vendor/WOW-master/dist/wow.min.js"></script>
+		<!-- Style-switcher  -->
+		<script type="text/javascript" src="vendor/jQuery.style.switcher.min.js"></script>
+
+		<script src="../../ajax/libs/js-cookie/2.1.2/js.cookie.min.js"></script>
+
+		<!-- Theme js -->
+		<script type="text/javascript" src="js/theme.js"></script>
+		<script type="text/javascript" src="js/google-map.js"></script>
+
+	</div> <!-- End of .main_page -->
+</body>
+
+</html>
